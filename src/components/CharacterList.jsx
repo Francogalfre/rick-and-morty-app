@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // Components
 import Character from "./Character";
 import "./css/characterList.css";
 
+// Hooks
+import useApiFetch from "./hooks/useApiFetch";
+
 const CharacterList = () => {
-  const [character, setCharacter] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
 
-  useEffect(() => {
-    async function fetchData() {
-      setLoading(true);
-      const response = await fetch(
-        `https://rickandmortyapi.com/api/character?page=${page}`
-      );
-      const data = await response.json();
-
-      setLoading(false);
-      setCharacter(data.results);
-    }
-
-    fetchData();
-  }, [page]);
+  // Api Fetch Hook
+  const { character, loading } = useApiFetch()
 
   return (
     <div>
