@@ -2,10 +2,10 @@ import React from "react";
 
 // Components
 import Character from "./Character";
-import "./css/characterList.css";
+import "../css/characterList.css";
 
 // Hooks
-import useApiFetch from "./hooks/useApiFetch";
+import useApiFetch from "../hooks/useApiFetch";
 
 const CharacterList = () => {
 
@@ -15,11 +15,11 @@ const CharacterList = () => {
   return (
     <div>
       {loading == true ? (
-        <div className="loading">
+        <div className="loading" title="loading" >
           <div className="spinner"></div>
         </div>
       ) : (
-        <div className="character-container">
+        <div title="list" className="character-container">
           {character.map((character, index) => {
             return <Character character={character} key={index} />;
           })}
@@ -35,7 +35,7 @@ const CharacterList = () => {
           </button>
         )}
 
-        <span className="page-number">Page: {page} / 42</span>
+        <span title="page" className="page-number">Page: {page} / 42</span>
         <button className="page-button" onClick={() => setPage(page + 1)}>
           Next Page ➡
         </button>

@@ -1,15 +1,15 @@
 import React from 'react'
 
 // Styles
-import './css/character.css'
+import '../css/character.css'
 
 const Character = ({ character }) => {
   return (
     <article className='character-card' key={character.id}>
       <div className='character-image'>
-        <img src={character.image} alt={character.name}  />
+        <img title='CharacterImage' src={character.image} alt={character.name}  />
       </div>
-      <div className='character-info'>
+      <div title='info' className='character-info'>
         <div className='character-section'>
           <h2 className='character-name'>{character.name}</h2>
           <span className='character-status'>

@@ -12,7 +12,7 @@ This website was made with the [API](https://rickandmortyapi.com). 🥝
 
 ## Demo
 
-you can try the web here : ( react-rick-and-morty-rest-api.netlify.app )
+you can try the web here : ( https://react-rick-and-morty-rest-api.netlify.app )
 
 ## Authors
 
