@@ -6,7 +6,7 @@ This is a project made for practice React <3
 
 Hello, this project was made by Franco Galfre to practice my React skills. 👩🏻‍💻
 
-It's a website that gives a list of Rick and Morty character
+With this project I was able to practice my skills of Testing, React APIs, React Custom Hooks, Styles, and more!
 
 This website was made with the [API](https://rickandmortyapi.com). 🥝
 
