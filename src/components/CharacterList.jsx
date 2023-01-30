@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Components
 import Character from "./Character";
@@ -8,10 +8,9 @@ import "./css/characterList.css";
 import useApiFetch from "./hooks/useApiFetch";
 
 const CharacterList = () => {
-  const [page, setPage] = useState(1);
 
   // Api Fetch Hook
-  const { character, loading } = useApiFetch()
+  const { page, character, loading, setPage } = useApiFetch()
 
   return (
     <div>

@@ -1,11 +1,13 @@
 import React from 'react'
+
+// Styles
 import './css/character.css'
 
 const Character = ({ character }) => {
   return (
     <article className='character-card' key={character.id}>
       <div className='character-image'>
-        <img src={character.image} alt={character.name} />
+        <img src={character.image} alt={character.name}  />
       </div>
       <div className='character-info'>
         <div className='character-section'>

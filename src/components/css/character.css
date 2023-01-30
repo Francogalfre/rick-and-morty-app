@@ -6,8 +6,7 @@
   background: rgb(60, 62, 68);
   border-radius: 0.5rem;
   margin: 0.75rem;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
-    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,rgb(0 0 0 / 6%) 0px 2px 4px -1px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -96,9 +95,7 @@
   .character-card {
     width: 500px;
     height: 200px;
-  }
-
-  .character-section  {
+  } .character-section  {
     padding-bottom: 8px;
   }
 }

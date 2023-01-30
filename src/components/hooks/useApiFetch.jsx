@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const useApiFetch = () => {
+  // useState
   const [character, setCharacter] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     async function fetchData() {
@@ -19,7 +21,7 @@ const useApiFetch = () => {
     fetchData();
   }, [page]);
 
-  return { character, loading }
+  return { page, character, loading, setPage }
 }
 
 export default useApiFetch
