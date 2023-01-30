@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0px;
+  background: rgb(39, 43, 51);
+  min-height: calc(50vh - 60px);
+}
+
+.title {
+  color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 50px;
+}
+
+.logo {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto 50px auto;
+  animation: infinite flying 5s;
+}
+
+/* Animation */
+@keyframes flying {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(20px)
+  }
+  100% {
+    transform: translateY(-5px)
+  }
+}
+
+/* Media query */
+@media screen and (max-width: 660px) {
+  .logo {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .character-card {
+    width: 500px;
+    height: 200px;
+  }
+
+  .character-section  {
+    padding-bottom: 8px;
+  }
+}
+
