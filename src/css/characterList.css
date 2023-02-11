@@ -69,5 +69,26 @@
   }
 }
 
+@media screen and (max-width: 530px) {
+  .character-container {
+    padding: 0px 40px;
+  }
+  .page-button {
+    font-size: 10px;
+  }
+  .page-number {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .page-button {
+    font-size: 8px;
+    margin: 0 10px;
+  }
+  .page-number {
+    font-size: 9px;
+  }
+}
 
 

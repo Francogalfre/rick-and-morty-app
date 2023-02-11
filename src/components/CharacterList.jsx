@@ -1,19 +1,31 @@
-import React from "react";
-
 // Components
 import Character from "./Character";
 import "../css/characterList.css";
 
 // Hooks
 import useApiFetch from "../hooks/useApiFetch";
+import { useState } from "react";
 
 const CharacterList = () => {
+  const [filter, setFilter] = useState(false)
+
+  // Filter Characters
+  const handleFilter = () => {
+    setFilter(!filter)
+  }
 
   // Api Fetch Hook
-  const { page, character, loading, setPage } = useApiFetch()
+  const { page, character, loading, setPage } = useApiFetch({ filter })
 
   return (
     <div>
+      <div className="filter">
+        <form>
+          <label htmlFor="">Filter Alive</label>
+          <input type="checkbox" className="checkbox" onClick={handleFilter} />
+        </form>
+      </div>
+
       {loading == true ? (
         <div className="loading" title="loading" >
           <div className="spinner"></div>

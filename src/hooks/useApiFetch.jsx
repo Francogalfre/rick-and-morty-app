@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const useApiFetch = () => {
+const useApiFetch = ({ filter }) => {
   // useState
   const [character, setCharacter] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,11 @@ const useApiFetch = () => {
     fetchData();
   }, [page]);
 
-  return { page, character, loading, setPage }
+  const filteredCharacters = filter 
+    ? [...character].filter(charac => charac.status === 'Alive')
+    : character
+
+  return { page, character: filteredCharacters, loading, setPage }
 }
 
 export default useApiFetch

@@ -6,7 +6,8 @@
   background: rgb(60, 62, 68);
   border-radius: 0.5rem;
   margin: 0.75rem;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -95,7 +96,51 @@
   .character-card {
     width: 500px;
     height: 200px;
-  } .character-section  {
+  }
+  .character-section {
     padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .character-card {
+    width: 100%;
+    height: 150px;
+  }
+  .character-info {
+    padding: 0.2rem 0.9rem;
+    height: 50%;
+  }
+  .character-section {
+    padding-bottom: 4px;
+  }
+  .character-name {
+    font-size: 18px;
+  }
+  .character-status {
+    font-size: 12px;
+  }
+  .character-info .location {
+    font-size: 10px;
+  }
+  .character-info .text-gray {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .character-card {
+    flex-direction: column;
+    height: 370px;
+  }
+  .character-info {
+    padding-top: 10px;
+  }
+  .character-name {
+    font-size: 20px;
+  }
+  .character-image {
+    width: 100%;
+    height: 200px;
   }
 }
