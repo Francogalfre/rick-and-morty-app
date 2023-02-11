@@ -12,7 +12,7 @@ This website was made with the [API](https://rickandmortyapi.com). 🥝
 
 ## Demo
 
-you can try the web here : ( https://rick-and-morty-app-virid-eta.vercel.app )
+you can use the web here : ( https://rick-and-morty-api-rest-app.vercel.app )
 
 ## Authors
 
