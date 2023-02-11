@@ -21,8 +21,8 @@ const CharacterList = () => {
     <div>
       <div className="filter">
         <form>
-          <label htmlFor="">Filter Alive</label>
-          <input type="checkbox" className="checkbox" onClick={handleFilter} />
+          <input type="checkbox" id="chx" className="filter-checkbox" onClick={handleFilter} />
+          <label htmlFor="chx">Filter Dead characters</label>
         </form>
       </div>
 
