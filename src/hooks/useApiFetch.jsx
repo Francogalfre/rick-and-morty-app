@@ -17,7 +17,6 @@ const useApiFetch = ({ filter }) => {
       setLoading(false);
       setCharacter(data.results);
     }
-
     fetchData();
   }, [page]);
 

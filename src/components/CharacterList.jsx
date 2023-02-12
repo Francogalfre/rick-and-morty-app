@@ -43,13 +43,13 @@ const CharacterList = () => {
           <button className="page-button hidden">⬅ Prev Page</button>
         ) : (
           <button className="page-button" onClick={() => setPage(page - 1)}>
-            ⬅ Prev Page
+            ⬅ Previous
           </button>
         )}
 
         <span title="page" className="page-number">Page: {page} / 42</span>
         <button className="page-button" onClick={() => setPage(page + 1)}>
-          Next Page ➡
+          Next ➡
         </button>
       </div>
     </div>

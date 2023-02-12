@@ -113,4 +113,12 @@ form label {
   }
 }
 
+@media screen and (max-width: 225px) {
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 
